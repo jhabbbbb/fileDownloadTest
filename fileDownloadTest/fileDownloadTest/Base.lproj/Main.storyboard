@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="quickLook" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qs0-eE-ITY">
+                                <rect key="frame" x="283" y="280" width="35" height="30"/>
+                                <state key="normal" title="open"/>
+                                <connections>
+                                    <action selector="open:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cBT-y1-Tb7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbr-go-Ve3">
+                                <rect key="frame" x="266" y="232" width="69" height="30"/>
+                                <state key="normal" title="Download"/>
+                                <connections>
+                                    <action selector="download:" destination="BYZ-38-t0r" eventType="touchUpInside" id="taC-f9-bs1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBO-Mc-BRf">
+                                <rect key="frame" x="283" y="86" width="34" height="30"/>
+                                <state key="normal" title="login"/>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zmW-Ch-EOy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pt8-jy-DbR">
+                                <rect key="frame" x="265" y="139" width="71" height="30"/>
+                                <state key="normal" title="getFileList"/>
+                                <connections>
+                                    <action selector="getFileList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oGg-oh-JFu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyC-j1-Ter">
+                                <rect key="frame" x="263" y="185" width="75" height="30"/>
+                                <state key="normal" title="getFileURL"/>
+                                <connections>
+                                    <action selector="getFileURL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JfG-a7-VPx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lBO-Mc-BRf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-199" id="7Rh-Bb-gbz"/>
+                            <constraint firstItem="TyC-j1-Ter" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="95K-o9-XdU"/>
+                            <constraint firstItem="Sbr-go-Ve3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-71" id="AEY-RK-KoM"/>
+                            <constraint firstItem="Sbr-go-Ve3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L2g-LT-r0b"/>
+                            <constraint firstItem="qs0-eE-ITY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-5" id="MzL-5P-YGg"/>
+                            <constraint firstItem="TyC-j1-Ter" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QS5-d2-DAz"/>
+                            <constraint firstItem="TyC-j1-Ter" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-137" id="UEV-QW-LFl"/>
+                            <constraint firstItem="lBO-Mc-BRf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X86-9b-5op"/>
+                            <constraint firstItem="Sbr-go-Ve3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-53" id="clp-aA-glX"/>
+                            <constraint firstItem="Pt8-jy-DbR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-146" id="hXP-A7-4Md"/>
+                            <constraint firstItem="Sbr-go-Ve3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-143" id="kb9-ET-u1V"/>
+                            <constraint firstItem="Pt8-jy-DbR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="npQ-w7-mZE"/>
+                            <constraint firstItem="qs0-eE-ITY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yyT-ap-Jly"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UEV-QW-LFl"/>
+                                <exclude reference="AEY-RK-KoM"/>
+                                <exclude reference="kb9-ET-u1V"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="316"/>
+        </scene>
+    </scenes>
+</document>
